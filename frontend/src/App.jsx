@@ -27,43 +27,43 @@ function ReclaimDemo() {
       setVerified(false);
       setError(null);
       setTransactionHash(null);
-      // const transformedProofs = proofs.map((proof) => transformProof(proof));
+      const transformedProofs = proofs.map((proof) => transformProof(proof));
 
-      // console.log(transformedProofs[0]);
+      console.log(transformedProofs[0]);
 
-        const transformedProofs = [{
-          "proof": {
-              "id": 0,
-              "claim_info": {
-                  "provider": "http",
-                  "parameters": "{\"additionalClientOptions\":{},\"body\":\"\",\"geoLocation\":\"\",\"headers\":{\"Sec-Fetch-Mode\":\"same-origin\",\"Sec-Fetch-Site\":\"same-origin\",\"User-Agent\":\"Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.69 Mobile Safari/537.36\"},\"method\":\"GET\",\"paramValues\":{\"username\":\"AvinashNayak27\"},\"responseMatches\":[{\"invert\":false,\"type\":\"contains\",\"value\":\"<span class=\\\"color-fg-muted\\\">({{username}})</span>\"}],\"responseRedactions\":[{\"jsonPath\":\"\",\"regex\":\"<span class=\\\"color-fg-muted\\\">\\\\((.*)\\\\)</span>\",\"xPath\":\"\"}],\"url\":\"https://github.com/settings/profile\"}",
-                  "context": "{\"contextAddress\":\"0x0\",\"contextMessage\":\"\",\"extractedParameters\":{\"username\":\"AvinashNayak28\"},\"providerHash\":\"0xcb4a6b54d59f97b5891cced83e9e909c938bc06149a22f9e76309f2d20300609\"}"
-              },
-              "signed_claim": {
-                  "claim": {
-                      "identifier": "0x341963dc7f4c29cf98824ba181a40042ec0876937414db4fac7390bb0896d163",
-                      "byte_identifier": "0x341963dc7f4c29cf98824ba181a40042ec0876937414db4fac7390bb0896d163",
-                      "owner": "0x6133b1b0cfa72dfd6d8600c499e9213c030fe0f5",
-                      "epoch": "1",
-                      "timestamp_s": "1743421238"
-                  },
-                  "signatures": [
-                      {
-                          "r": "0x54ac8514640f953e8de59e0e1be382d624c177d00721b7250c27c8517f781d79",
-                          "s": "0x67d5551138f59e80a73d88d7cb793f71a08069c8601998d30ebb8e3ffe989fa8",
-                          "v": 28
-                      }
-                  ]
-              }
-          }
-      }]
+      //   const transformedProofs = [{
+      //     "proof": {
+      //         "id": 0,
+      //         "claim_info": {
+      //             "provider": "http",
+      //             "parameters": "{\"additionalClientOptions\":{},\"body\":\"\",\"geoLocation\":\"\",\"headers\":{\"Sec-Fetch-Mode\":\"same-origin\",\"Sec-Fetch-Site\":\"same-origin\",\"User-Agent\":\"Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.69 Mobile Safari/537.36\"},\"method\":\"GET\",\"paramValues\":{\"username\":\"AvinashNayak27\"},\"responseMatches\":[{\"invert\":false,\"type\":\"contains\",\"value\":\"<span class=\\\"color-fg-muted\\\">({{username}})</span>\"}],\"responseRedactions\":[{\"jsonPath\":\"\",\"regex\":\"<span class=\\\"color-fg-muted\\\">\\\\((.*)\\\\)</span>\",\"xPath\":\"\"}],\"url\":\"https://github.com/settings/profile\"}",
+      //             "context": "{\"contextAddress\":\"0x0\",\"contextMessage\":\"\",\"extractedParameters\":{\"username\":\"AvinashNayak28\"},\"providerHash\":\"0xcb4a6b54d59f97b5891cced83e9e909c938bc06149a22f9e76309f2d20300609\"}"
+      //         },
+      //         "signed_claim": {
+      //             "claim": {
+      //                 "identifier": "0x341963dc7f4c29cf98824ba181a40042ec0876937414db4fac7390bb0896d163",
+      //                 "byte_identifier": "0x341963dc7f4c29cf98824ba181a40042ec0876937414db4fac7390bb0896d163",
+      //                 "owner": "0x6133b1b0cfa72dfd6d8600c499e9213c030fe0f5",
+      //                 "epoch": "1",
+      //                 "timestamp_s": "1743421238"
+      //             },
+      //             "signatures": [
+      //                 {
+      //                     "r": "0x54ac8514640f953e8de59e0e1be382d624c177d00721b7250c27c8517f781d79",
+      //                     "s": "0x67d5551138f59e80a73d88d7cb793f71a08069c8601998d30ebb8e3ffe989fa8",
+      //                     "v": 28
+      //                 }
+      //             ]
+      //         }
+      //     }
+      // }]
 
       setLoading(true);
       const provider = new RpcProvider({
         nodeUrl: "https://starknet-sepolia.public.blastapi.io",
       });
       const contractAddress =
-        "0x0225c3b783c4dd8a96d6bbe7568202ae66b06b6c55df04ec5b67930687fc4796";
+        "0x06ff309154d316c0f368e775907c975dfec4dea20b8050e7b257868bb686be53";
       const reclaimVerifierAddress =
         "0x0765f3f940f7c59288b522a44ac0eeba82f8bf71dd03e265d2c9ba3521466b4e"; // Replace with your contract address
 
