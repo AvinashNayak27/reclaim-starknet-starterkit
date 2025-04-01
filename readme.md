@@ -2,7 +2,7 @@
 
 This is a starter kit for building Web3 applications on Starknet that leverage the Reclaim Protocol for on-chain verification of off-chain data. The project demonstrates how to create an ERC20 token DevToken that lets only developers mint by verifying their Github Identity using the Reclaim Protocol.
 
-- [Explorer Link](https://sepolia.voyager.online/token/0x06ff309154d316c0f368e775907c975dfec4dea20b8050e7b257868bb686be53)
+- [Explorer Link](https://sepolia.voyager.online/token/0x016db0469987a14d7221881b7f4b78c1ea26c6b1d4d0122fc378a90474ee070d)
 
 ## Overview
 

@@ -63,9 +63,9 @@ function ReclaimDemo() {
         nodeUrl: "https://starknet-sepolia.public.blastapi.io",
       });
       const contractAddress =
-        "0x06ff309154d316c0f368e775907c975dfec4dea20b8050e7b257868bb686be53";
+        "0x016db0469987a14d7221881b7f4b78c1ea26c6b1d4d0122fc378a90474ee070d"; // Dev Token Contract Address
       const reclaimVerifierAddress =
-        "0x0765f3f940f7c59288b522a44ac0eeba82f8bf71dd03e265d2c9ba3521466b4e"; // Replace with your contract address
+        "0x0765f3f940f7c59288b522a44ac0eeba82f8bf71dd03e265d2c9ba3521466b4e"; // Reclaim Verifier Contract Address
 
 
       const { abi: contractAbi } = await provider.getClassAt(contractAddress);
@@ -215,7 +215,7 @@ function ReclaimDemo() {
   return (
     <div className="flex flex-col items-center gap-8 p-6 bg-gray-900 text-white min-h-screen">
       <h1 className="text-4xl font-bold text-center">
-        Claim Faucet on Starknet
+      Mint Dev Tokens on Starknet
       </h1>
 
       {!address && <ConnectModal />}
