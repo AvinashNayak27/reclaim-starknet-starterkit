@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"tr3984tkm5fqq","package_name":"hello_starknet","contract_name":"DevToken","module_path":"hello_starknet::DevToken","artifacts":{"sierra":"hello_starknet_DevToken.contract_class.json","casm":null}}]}
